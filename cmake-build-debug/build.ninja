@@ -8,7 +8,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: RQ_decomposition
+# Project: Test
 # Configurations: Debug
 # =============================================================================
 
@@ -36,45 +36,45 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/sergijdorofeev/Projects/RQ$ decomposition/cmake-build-debug/
+cmake_ninja_workdir = /Users/sergijdorofeev/Projects/Test/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target RQ_decomposition
+# Object build statements for EXECUTABLE target Test
 
 
 #############################################
-# Order-only phony target for RQ_decomposition
+# Order-only phony target for Test
 
-build cmake_object_order_depends_target_RQ_decomposition: phony || CMakeFiles/RQ_decomposition.dir
+build cmake_object_order_depends_target_Test: phony || CMakeFiles/Test.dir
 
-build CMakeFiles/RQ_decomposition.dir/main.cpp.o: CXX_COMPILER__RQ_decomposition_Debug /Users/sergijdorofeev/Projects/RQ$ decomposition/main.cpp || cmake_object_order_depends_target_RQ_decomposition
-  DEP_FILE = CMakeFiles/RQ_decomposition.dir/main.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+build CMakeFiles/Test.dir/main.cpp.o: CXX_COMPILER__Test_Debug /Users/sergijdorofeev/Projects/Test/main.cpp || cmake_object_order_depends_target_Test
+  DEP_FILE = CMakeFiles/Test.dir/main.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++20
   INCLUDES = -isystem /opt/homebrew/include/eigen3
-  OBJECT_DIR = CMakeFiles/RQ_decomposition.dir
-  OBJECT_FILE_DIR = CMakeFiles/RQ_decomposition.dir
+  OBJECT_DIR = CMakeFiles/Test.dir
+  OBJECT_FILE_DIR = CMakeFiles/Test.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target RQ_decomposition
+# Link build statements for EXECUTABLE target Test
 
 
 #############################################
-# Link the executable RQ_decomposition
+# Link the executable Test
 
-build RQ_decomposition: CXX_EXECUTABLE_LINKER__RQ_decomposition_Debug CMakeFiles/RQ_decomposition.dir/main.cpp.o
+build Test: CXX_EXECUTABLE_LINKER__Test_Debug CMakeFiles/Test.dir/main.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
-  OBJECT_DIR = CMakeFiles/RQ_decomposition.dir
+  OBJECT_DIR = CMakeFiles/Test.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = RQ_decomposition
-  TARGET_PDB = RQ_decomposition.dbg
+  TARGET_FILE = Test
+  TARGET_PDB = Test.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/Users/sergijdorofeev/Projects/RQ decomposition/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/sergijdorofeev/Projects/Test/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -85,7 +85,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/Users/sergijdorofeev/Projects/RQ decomposition/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/sergijdorofeev/Projects/RQ decomposition" -B"/Users/sergijdorofeev/Projects/RQ decomposition/cmake-build-debug"
+  COMMAND = cd /Users/sergijdorofeev/Projects/Test/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/sergijdorofeev/Projects/Test -B/Users/sergijdorofeev/Projects/Test/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -101,9 +101,9 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /Users/sergijdorofeev/Projects/RQ decomposition/cmake-build-debug
+# Folder: /Users/sergijdorofeev/Projects/Test/cmake-build-debug
 
-build all: phony RQ_decomposition
+build all: phony Test
 
 # =============================================================================
 # Built-in targets
